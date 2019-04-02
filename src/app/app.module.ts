@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
+import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { PathNotFoundComponent } from './path-not-found/path-not-found.component
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatListModule,
     MatToolbarModule,
     AppRoutingModule
   ],

@@ -6,6 +6,6 @@ export class ProductsDataService {
   constructor(private httpClient: HttpClient) {}
 
   getProducts() {
-    return this.httpClient.get('produts.json');
+    return this.httpClient.get('products.json');
   }
 }
