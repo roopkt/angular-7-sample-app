@@ -29,8 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Features
 
- [-] angular app from angular cli
- [-] integrate with angular material
- [-] lazy loading while routing
- [-] organizing the modules
- [-] hosting locally using node.js ( express.js )
+ - [x] angular app from angular cli
+ - [x] integrate with angular material
+ - [x] lazy loading while routing
+ - [x] organizing the modules
+ - [x] hosting locally using node.js ( express.js )
