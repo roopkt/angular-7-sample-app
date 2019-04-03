@@ -1,6 +1,6 @@
 const  express  = require('express');
 const port = process.env.PORT || 3000;
-const publicWeb = process.env.PUBLICWEB || './dist/pm-pinch';
+const publicWeb = process.env.PUBLICWEB || './dist';
 
 const app = express();
 
