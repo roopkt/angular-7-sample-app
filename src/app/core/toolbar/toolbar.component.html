@@ -1,15 +1,26 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <a href="http://angular.io" target="_blank"> </a>
-    <span class="title">PM Pinch</span>
-    <a mat-button [routerLink]="['/home']" routerLinkActive="router-link-active"
-      >Home</a
-    >
-    <a
-      mat-button
-      [routerLink]="['/products']"
-      routerLinkActive="router-link-active"
-      >products</a
-    >
-  </mat-toolbar-row>
-</mat-toolbar>
+<header>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <a href="http://angular.io" target="_blank"> </a>
+      <span class="title">PM Pinch</span>
+      <a
+        mat-button
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        >Home</a
+      >
+      <a
+        mat-button
+        [routerLink]="['/products']"
+        routerLinkActive="router-link-active"
+        >products</a
+      >
+      <a
+        mat-button
+        [routerLink]="['/auth/login']"
+        routerLinkActive="router-link-active"
+        >Login</a
+      >
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>

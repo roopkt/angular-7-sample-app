@@ -18,6 +18,11 @@ const routes: Routes = [
     path: 'products',
     loadChildren: '../app/products/products.module#ProductsModule'
   },
+
+  {
+    path: 'auth',
+    loadChildren: './auth/auth.module#AuthModule'
+  },
   {
     path: '**',
     pathMatch: 'full',
@@ -26,7 +31,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      enableTracing: false // <-- debugging purposes only
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
