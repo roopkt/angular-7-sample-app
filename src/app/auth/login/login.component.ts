@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'pm-login',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  constructor(private authService: AuthService, private router: Router) {}
 
-  constructor() { }
+  email: string;
+  password: string;
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  login(): void {
+    this.authService.login(this.email, this.password).subscribe(data => {
+      this.router.navigate(['']);
+    });
   }
-
 }

@@ -1,15 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  MatButtonModule,
-  MatListModule,
-  MatToolbarModule,
-  MatCardModule
-} from '@angular/material';
-const sharedItems = [MatButtonModule, MatListModule, MatToolbarModule, MatCardModule];
+import { AppMaterialModule } from './material.module';
+
 @NgModule({
   declarations: [],
-  imports: [].concat(CommonModule, sharedItems),
-  exports: sharedItems
+  imports: [AppMaterialModule],
+  exports: [AppMaterialModule]
 })
 export class SharedModule {}
